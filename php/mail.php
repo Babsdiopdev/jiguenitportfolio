@@ -1,3 +1,4 @@
+<!-- 
 <?php
     if (isset($_POST['message'])) {
         $entete  = 'MIME-Version: 1.0' . "\r\n";
@@ -13,4 +14,9 @@
         if($retour)
             echo '<p>Votre message a bien été envoyé.</p>';
     }
-    ?>
+    ?> -->
+    <em> Merci 
+    <?php
+    echo strip_tags($_POST['name']);?>
+     donnees bien reçues
+</em>
