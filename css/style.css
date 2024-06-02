@@ -191,6 +191,7 @@ body.active{
     box-shadow: var(--box-shadow-inset);
 }
 
+
 .home{
     display: flex;
     flex-flow: column;
@@ -213,14 +214,17 @@ body.active{
 }
 
 .home .share{
-    position: relative;
- 
+    position: absolute; 
+    margin: 10rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding:1.5rem;
     opacity: 1;
+    
+   
+ 
 }
-
+ 
 .home .share a{
     height: 5rem;
     width: 5rem;
@@ -235,7 +239,7 @@ body.active{
 .home .share a:hover{
     box-shadow: var(--box-shadow-inset);
     color:var(--green);
-}
+} 
 
 .about .row{
     display: flex;
@@ -485,6 +489,22 @@ body.active{
     }
 
 }
-.monNom{
-    margin-top: 50px;
+.grid-container .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap:2rem;
+    justify-content: space-between;
+}
+.grid-container .row .grid-item{
+    flex:1 1 40rem;
+}
+#gauche{
+    padding: auto;
+    margin: 0;
+
+}
+#droite{
+    margin-left: 100px;
+    
 }

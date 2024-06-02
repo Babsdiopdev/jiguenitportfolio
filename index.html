@@ -3,9 +3,11 @@
 
 <head>
     <link rel="shortcut icon" type="x-icon" href="image/chris-icon.png">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link rel="stylesheet" href="css/bootstrap.css"> -->
     <title> NOGAYE DIOP personal portfolio</title>
 
     <!-- font awesome cdn link  -->
@@ -17,20 +19,23 @@
 </head>
 
 <body>
-
+    <p style="text-align: right; margin-top: 15px;">
+       
+    </p>
+   
     <!-- header section starts  -->
 
     <header class="header">
 
         <div class="user">
             <img src="images/jiguenIt.png" alt="">
-          
+
             <p>FULL-STACK Developer & Webmaster</p>
         </div>
 
         <nav class="navbar">
 
-            <a href="#home">ACCUEIL</a>
+            <a href="#home">A propos</a>
             <!-- <a href="#about">about</a> -->
             <a href="#services">Experiences</a>
 
@@ -56,28 +61,30 @@
     <section class="home" id="home">
 
         <div class="content">
+            <div class="share">
+                <a href="https://web.facebook.com/nogaye.diop.315/" class="fab fa-facebook-f"></a>
+                <!-- <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a> -->
+                <a href="https://www.linkedin.com/in/nogaye-diop-webmaster" class="fab fa-linkedin"></a>
+                <a href="https://github.com/Babsdiopdev" class="fab fa-github"></a>
+            </div>
 
-            <h3 class="monNom">NOGAYE DIOP
-                <p> Keur Massar Nord unité 16,Dakar ,Senegal </p>
-                    <h4> +221775664316,jiguenit2023@gmail.com</h4>
-            </h3>
-            <h4>J'ai de l'expérience dans l'exploitation des frameworks agiles ,des CMS et edition de code propre
+            <h3>NOGAYE DIOP </h3>
+                <span> Keur Massar Nord unité 16,Dakar ,Senegal </span>
+                <h4> +221775664316,jiguenit2023@gmail.com</h4>
+           
+          
+            <em>J'ai de l'expérience dans l'exploitation des frameworks agiles ,des CMS et edition de code propre
                 élégant et respectant les bonnes pratiques de developpement pour fournir un synopsis robuste pour des
                 aperçus de haut niveau.
                 Les approches itératives de la stratégie d'entreprise favorisent la réflexion collaborative pour faire
                 progresser la proposition de valeur globale.
 
-            </h4>
+            </em>
 
         </div>
 
-        <div class="share">
-            <a href="https://web.facebook.com/nogaye.diop.315/" class="fab fa-facebook-f"></a>
-            <!-- <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a> -->
-            <a href="https://www.linkedin.com/in/nogaye-diop-webmaster" class="fab fa-linkedin"></a>
-            <a href="https://github.com/Babsdiopdev" class="fab fa-github"></a>
-        </div>
+       
 
     </section>
 
@@ -87,7 +94,7 @@
 
     <section class="about" id="about">
 
-        <h1 class="heading"> <span>COMPÉTENCES</span> </h1>
+        <p class="heading"> <span>COMPÉTENCES</span> </p>
 
 
         <div class="row">
@@ -120,26 +127,89 @@
             </div>
 
         </div>
+        <marquee>
+            <h3>Domaines de compétences</h3>
+        </marquee>
+       <div class="grid-container">
+  <div class="row">
+    <div class="grid-item" id="gauche">
+        <pre><em>
+    GESTION DE PROJET WEB
+Site vitrine, e-commerce, application web
+</em></pre>
+        <pre>
+<em>
+    CONCEPTION GRAPHIQUE & WEBDESIGN
+Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters.
+</em>
+</pre>
+        <pre>
+<em>
+    APPLICATIONS SPÉCIFIQUES ET INTERFACE D'ADMINISTRATION
+Laravel - MYSQL / SpringBoot - Angular
+</em>
+</pre>
+        <pre>
+<em>
+    MISE EN PLACE / MODIFICATION / GESTION DE CMS
+Wordpress
+</em>
+</pre>
+    </div>
+    <div class="grid-item" id="droite">
+        <pre>
+<em> 
+    INTÉGRATION (X)HTML / CSS
+Codage à la main respectueux des standards du Web
+</em>
+</pre>
+        <pre>
+<em>
+    DYNAMISE DES PAGES PAR JAVASCRIPT / AJAX
+jQuery, Prototype, Mootools, Scriptaculous
+</em>
+</pre>
+        <pre>
+<em>
+    VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO
+Accessibilité & ergonomie des pages web
+</em>
+</pre>
+        <pre>
+<em>
+    Création de jeux perso
+htmls/css &javascript ,javaEE
+</em>
+</pre>
+    </div>
+    
+  </div>
+               
+             
+            
+        
 
+       </div>
     </section>
 
     <!-- about section ends -->
 
     <!-- services section starts  -->
-
+    <hr>
     <section class="services" id="services">
 
-        <h1 class="heading"> <span>Experiences</span> </h1>
+        <p class="heading"> <span>Experiences</span> </p>
 
         <div class="box-container">
 
             <div class="box">
                 <i class="fas fa-code"></i>
+           
                 <h3>ERP</h3>
-                <p>Mini projet realise avec angular pour la partie frontEnd et SpirngBoot pour le backEnd </p>
+                <p>Projet realise avec angular pour la partie frontEnd et SpirngBoot pour le backEnd </p>
             </div>
 
-            <div class="box">
+            <div class="box"  id="test">
                 <i class="fas fa-paint-brush"></i>
                 <h3>UX/UI DESIGN
                 </h3>
@@ -231,15 +301,15 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading"> <span>contact</span> me </h1>
+        <p class="heading"> <span>contactez</span> moi </p>
 
         <form action="php/mail.php" method="post">
-            <input type="text" placeholder="your name" class="box" name="name">
-            <input type="email" placeholder="your email" class="box" name="email">
-            <input type="text" placeholder="subject" class="box" name="subject">
-            <textarea name="message" class="box" placeholder="your message" id="" cols="30" rows="10"
+            <input type="text" placeholder="votre nom" class="box" name="name">
+            <input type="email" placeholder="votre email" class="box" name="email">
+            <input type="text" placeholder="objet" class="box" name="subject">
+            <textarea name="message" class="box" placeholder="votre message" id="" cols="30" rows="10"
                 name="message"></textarea>
-            <input type="submit" value="send message" class="btn">
+            <input type="submit" value="envoyez" class="btn">
         </form>
 
     </section>
@@ -257,6 +327,7 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 
