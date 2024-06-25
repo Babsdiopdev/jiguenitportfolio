@@ -14,9 +14,23 @@
         if($retour)
             echo '<p>Votre message a bien été envoyé.</p>';
     }
-    ?> -->
+    ?> 
     <em> Merci 
     <?php
-    echo strip_tags($_POST['name']);?>
+    echo strip_tags($_POST['name'])?>
      donnees bien reçues
-</em>
+</em> -->
+
+
+<?php
+$to = "test@example.com";
+$subject = "Test Email";
+$message = "This is a test email sent from PHP using MailHog.";
+$headers = "From: webmaster@example.com";
+
+if(mail($to, $subject, $message, $headers)) {
+    echo "Email sent successfully.";
+} else {
+    echo "Failed to send email.";
+}
+?>
