@@ -84,6 +84,13 @@ body.active{
     box-shadow: var(--box-shadow-inset);
     color:var(--green);
 }
+#travaux{
+    text-align: center;
+    font-size: 1.5rem;
+    
+    text-transform: uppercase;
+     
+}
 
 .heading{
     text-align: center;
@@ -94,7 +101,8 @@ body.active{
 }
 
 .heading span{
-    color:var(--green);
+    /*color:var(--green);*/
+    color: #eca222;
     text-transform: uppercase;
 }
 
@@ -200,10 +208,10 @@ body.active{
 }
 
 .home .content h3{
-    font-size: 7rem;
+    /*font-size: 7rem;*/
     color:var(--black);
     line-height: 1.1;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
 }
 
 .home .content p{
@@ -387,7 +395,8 @@ body.active{
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
+    /*background: var(--green);*/
+    background-color: #eca222;
     z-index: -1;
     clip-path: circle(9rem at 5% 0%);
     transition: .3s linear;
