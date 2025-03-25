@@ -92,9 +92,12 @@ body.active{
      
 }
 #fonction{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
+#videPourInstant{
+    margin-top: 50%;
+}
 .heading{
     text-align: center;
     font-size: 5rem;
